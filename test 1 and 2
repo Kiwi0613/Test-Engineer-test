@@ -1,0 +1,31 @@
+task = ["check_build_script", "lint", "compile", "package", "test"]
+task_user = []
+
+task_user.append(input("First task: "))
+while task_user[0] != task[0]:
+    print("The testing cannot continue with " + task_user[0] + " as first task")
+    task_user[0] = (input("Insert again for First task: "))
+
+task_user.append(input("Second task: "))
+while task_user[1] != task[1]:
+    print("The testing cannot continue with " + task_user[1] + " as second task")
+    task_user[1] = (input("Insert again for Second task: "))
+
+task_user.append(input("Third task: "))
+while task_user[2] != task[2]:
+    print("The testing cannot continue with " + task_user[2] + " as third task")
+    task_user[2] = (input("Insert again for Third task: "))
+
+task_user.append(input("Forth task: "))
+while task_user[3] != task[3]:
+    print("The testing cannot continue with " + task_user[3] + " as forth task")
+    task_user[3] = (input("Insert again for Forth task: "))
+
+task_user.append(input("Fifth task: "))
+while task_user[4] != task[4]:
+    print("The testing cannot continue with " + task_user[4] + " as fifth task")
+    task_user[4] = (input("Insert again for Forth task: "))
+
+print("\nThe testing order is: ")
+for item in task_user:
+    print(item, end='\n')
